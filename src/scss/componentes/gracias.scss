@@ -3,7 +3,7 @@
 	text-align: center;
 	transform: translate3d(0,30%,0);
 	// border: 2px solid red;
-	@include mq($movil1){
+	@include mq(sm){
 		transform: translate3d(0,50%,0);
 	}
 	& h1{

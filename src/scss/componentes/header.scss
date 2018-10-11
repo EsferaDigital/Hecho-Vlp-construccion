@@ -5,31 +5,38 @@
 	flex: 0 1 10%;
 	height: auto;
 	// border: 2px solid blue;
-	@include mq($movil1){
+	@include mq(sm){
 		margin-top: .5rem;
 	}
-	@include mq($medium){
+	@include mq(sml){
 		margin-top: 4rem;
 	}
-	@include mq($large){
+	@include mq(mdl){
 		width: 50%;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-	}
+    }
+    @include mq(lgm){
+        margin-top: 0;
+    }
 	&-img{
 		display: block;
 		width: 40%;
 		margin: 1rem auto;
 		// border: 2px solid red;
-		@include mq($movil1){
-			// width: 70%;
-		}
-		@include mq($medium){
+		@include mq(smH){
 			width: 30%;
-		}
-		@include mq($large){
+        }
+        @include mq(smmH){
 			width: 25%;
 		}
+		@include mq(md){
+			width: 30%;
+		}
+		@include mq(mdl){
+			width: 35%;
+        }
+        @include mq(lgm){
+            width: 30%;
+        }
 	}
 	&-subtitle{
 		display: block;
@@ -38,15 +45,15 @@
 		color: color(text);
 		font-size: 1rem;
 		letter-spacing: 2px;
-		@include mq($movil1){
+		@include mq(sm){
 			font-size: 1.2rem;
 		}
-		@include mq($medium){
+		@include mq(md){
 			margin-top: 1rem;
 			font-size: 1.4rem;
 			text-transform: uppercase;
 		}
-		@include mq($large){
+		@include mq(mdl){
 			font-size: 1.3rem;
 			text-transform: uppercase;
 		}

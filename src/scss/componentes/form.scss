@@ -1,16 +1,23 @@
 form{
+    width: 100%;
+    align-self: center;
 	display: flex;
 	padding: 0 .5rem;
-	margin-top: 2rem;
-	@include mq($movil1){
+    margin-top: 2rem;
+	@include mq(sm){
 		padding: 0 1rem;
 	}
-	@include mq($small){
+	@include mq(smm){
 		width: 80%;
-		max-width: 500px;
 		margin: 0 auto;
-		margin-top: 2rem;
-	}
+		margin-top: 1.5rem;
+    }
+    @include mq(mdl){
+        margin-top: 3rem;
+    }
+    @include mq(lgs){
+        margin-top: 2rem;
+    }
 }
 
 input[type="text"]{
@@ -22,10 +29,10 @@ input[type="text"]{
 	font-size: .9rem;
 	letter-spacing: 2px;
 	border-radius: 1.5rem 0 0 1.5rem;
-	@include mq($movil1){
+	@include mq(sm){
 		width: 65%;
 	}
-	@include mq($large){
+	@include mq(mdl){
 		width: 75%;
 	}
 	&:active{
@@ -47,10 +54,10 @@ button[type="submit"]{
 	color: white;
 	border: none;
 	border-radius: 0 1.5rem 1.5rem 0;
-	@include mq($movil1){
+	@include mq(sm){
 		width: 35%;
 	}
-	@include mq($large){
+	@include mq(mdl){
 		width: 25%;
 	}
 	& i{

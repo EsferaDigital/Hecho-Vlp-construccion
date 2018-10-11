@@ -9,7 +9,7 @@
 	transform: scale3d(0,0,0);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;	
+	background-position: center center;
 	background-image: img('valparaiso.jpg');
 	overflow-y: auto;
 	&::before{
@@ -21,16 +21,16 @@
 		height: 180vh;
 		background-color: rgb(48, 47, 47);
 		opacity: .7;
-		@include mq($movil1){
+		@include mq(sm){
 			height: 140vh;
 		}
-		@include mq($movil2){
+		@include mq(smm){
 			height: 135vh;
 		}
-		@include mq($small){
+		@include mq(sml){
 			height: 100%;
 		}
-	
+
 	}
 	&.zoom-in{
 		animation: zoomIn .5s forwards;
@@ -56,10 +56,10 @@
 		width: 95%;
 		margin: auto;
 		// border: 2px solid red;
-		@include mq($large){
+		@include mq(lgs){
 			width: 85%;
 		}
-		@include mq($x-large){
+		@include mq(lg){
 			width: 95%;
 		}
 		& h2{
@@ -79,7 +79,7 @@
 				height: 1px;
 				background: color(degradado-start);
 				// margin: 10px 0 15px;
-				@include mq($medium){
+				@include mq(md){
 					width: 30%;
 				}
 			}
@@ -89,7 +89,7 @@
 			letter-spacing: 2px;
 			padding: .5rem 0;
 			font-weight: 600;
-			@include mq($large){
+			@include mq(lgs){
 				padding: .2rem 0;
 				font-size: 1.3rem;
 			}
@@ -128,7 +128,7 @@
 			background-color: transparent;
 			transform: scale(1.2);
 		}
-		
+
 	}
 }
 

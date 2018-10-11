@@ -1,9 +1,16 @@
 .c-botones{
 	text-align: center;
-	margin-top: 4rem;
-	@include mq($movil1){
-		margin-top: 5rem;
-	}
+    margin-top: 4rem;
+    // border: 2px solid green;
+    @include mq(smH){
+        margin-top: 1.5rem;
+    }
+	@include mq(sm){
+		margin-top: 3rem;
+    }
+    @include mq(lgm){
+        margin-top: 2rem;
+    }
 }
 
 .boton{
