@@ -1,0 +1,61 @@
+form{
+	display: flex;
+	padding: 0 .5rem;
+	margin-top: 2rem;
+	@include mq($movil1){
+		padding: 0 1rem;
+	}
+	@include mq($small){
+		width: 80%;
+		max-width: 500px;
+		margin: 0 auto;
+		margin-top: 2rem;
+	}
+}
+
+input[type="text"]{
+	width: 60%;
+	line-height: 1.5;
+	padding: .5rem;
+	border: transparent;
+	font-weight: 600;
+	font-size: .9rem;
+	letter-spacing: 2px;
+	border-radius: 1.5rem 0 0 1.5rem;
+	@include mq($movil1){
+		width: 65%;
+	}
+	@include mq($large){
+		width: 75%;
+	}
+	&:active{
+		border: color(success);
+	}
+}
+
+button[type="submit"]{
+	@include boton-ovalado;
+	width: 40%;
+	position: relative;
+	line-height: 2;
+	letter-spacing: 2px;
+	font-weight: 600;
+	font-family: $primary-font;
+	font-size: .9rem;
+	padding: 0 .2rem 0 .5rem;
+	background-color: color(success);
+	color: white;
+	border: none;
+	border-radius: 0 1.5rem 1.5rem 0;
+	@include mq($movil1){
+		width: 35%;
+	}
+	@include mq($large){
+		width: 25%;
+	}
+	& i{
+		position: absolute;
+		top: .6rem;
+		right: 75%;
+	}
+}

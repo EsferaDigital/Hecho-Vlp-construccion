@@ -1,0 +1,31 @@
+// Configuración
+
+@import "config/reset.scss";
+@import "config/funciones.scss";
+@import "config/fuentes.scss";
+@import "config/colores.scss";
+@import "config/var_generales.scss";
+
+// Layout
+
+@import "layout/var.scss";
+@import "layout/breakpoints.scss";
+@import "layout/layout.scss";
+
+// Elementos
+
+@import "elements/botones.scss";
+@import "elements/modal.scss";
+
+// Componentes
+
+@import "componentes/header.scss";
+@import "componentes/main.scss";
+@import "componentes/form.scss";
+@import "componentes/botones.scss";
+@import "componentes/footer.scss";
+@import "componentes/gracias.scss";
+
+
+
+// Animaciones

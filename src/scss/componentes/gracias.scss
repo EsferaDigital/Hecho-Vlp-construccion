@@ -1,0 +1,22 @@
+.c-gracias{
+	position: relative;
+	text-align: center;
+	transform: translate3d(0,30%,0);
+	// border: 2px solid red;
+	@include mq($movil1){
+		transform: translate3d(0,50%,0);
+	}
+	& h1{
+		color: color(text);
+		font-size: 2rem;
+	}
+}
+
+.volver{
+	@include boton-ovalado;
+	display: inline-block;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 5rem;
+}
