@@ -1,55 +1,26 @@
 .c-header{
 	display: block;
-	width: 90%;
-	margin: 0 auto;
-	flex: 0 1 10%;
-	height: auto;
-	// border: 2px solid blue;
-	@include mq(sm){
-		margin-top: .5rem;
-	}
-	@include mq(sml){
-		margin-top: 4rem;
-	}
-	@include mq(mdl){
-		width: 50%;
-    }
-    @include mq(lgm){
-        margin-top: 0;
-    }
 	&-img{
 		display: block;
 		width: 40%;
-		margin: 1rem auto;
-		// border: 2px solid red;
-		@include mq(smH){
-			width: 30%;
-        }
-        @include mq(smmH){
-			width: 25%;
-		}
-		@include mq(md){
-			width: 30%;
-		}
-		@include mq(mdl){
-			width: 35%;
-        }
-        @include mq(lgm){
-            width: 30%;
-        }
+    margin: 1rem auto;
+    margin-bottom: .5rem;
+    @include mq(mdl){
+      width: 30%;
+    }
+    @include mq(lgm){
+      width: 15%;
+    }
 	}
 	&-subtitle{
-		display: block;
-		width: 100%;
 		text-align: center;
 		color: color(text);
-		font-size: 1rem;
+		font-size: 1.2rem;
 		letter-spacing: 2px;
 		@include mq(sm){
 			font-size: 1.2rem;
 		}
 		@include mq(md){
-			margin-top: 1rem;
 			font-size: 1.4rem;
 			text-transform: uppercase;
 		}
