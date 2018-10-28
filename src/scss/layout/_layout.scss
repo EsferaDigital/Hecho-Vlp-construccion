@@ -1,13 +1,13 @@
 .c-body{
 	max-width: 100%;
   overflow-x: hidden;
-  height: 100vh;
+  height: auto;
 	min-height: 100vh;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: img('valparaiso.jpg');
+  background-image: img("valparaiso.jpg");
 	&::before{
 		content: "";
 		position: absolute;
@@ -29,26 +29,37 @@
                 "footer";
   grid-template-rows: 1fr 2fr 1fr 10%;
   position: relative;
-  border: 4px solid orange;
+  // border: 4px solid orange;
   height: 100%;
+  @include mq(mdl){
+    min-height: 100vh;
+    grid-template-rows: 1.5fr 2fr 1fr 1fr;
+  }
+  @include mq(lgs){
+    height: 100vh;
+    grid-template-rows: 1fr 1.5fr 1fr .5fr;
+  }
 }
 
 .c-header{
   grid-area: header;
-  border: 2px solid red;
+  // border: 2px solid red;
+  @include mq(mdl){
+    align-self: center;
+  }
 }
 
 .c-main{
   grid-area: main;
-  border: 2px solid green;
+  // border: 2px solid green;
 }
 
 .c-sociales{
   grid-area: sociales;
-  border: 2px solid blue;
+  // border: 2px solid blue;
 }
 
 .c-footer{
   grid-area: footer;
-  border: 2px solid purple;
+  // border: 2px solid purple;
 }

@@ -7,7 +7,10 @@
 		transform: translate3d(0,50%,0);
 	}
 	& h1{
-		color: color(text);
+    color: color(text);
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: $alternative-font;
 		font-size: 2rem;
 	}
 }

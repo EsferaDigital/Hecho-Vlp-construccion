@@ -1,5 +1,5 @@
 <?php
-	$destino = "contacto@quintilvalley.cl";
+	$destino = "gabrielzavando@gmail.com";
 	$origen = "web en construcción";
 	$asunto = "subscriptor";
 	$email = $_POST["email"];

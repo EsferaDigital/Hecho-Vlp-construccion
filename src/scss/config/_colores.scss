@@ -2,7 +2,8 @@
 
 $colors:(
 	primary: #2c3d50,
-	secondary: #95a4a5,
+  secondary: #95a4a5,
+  text2: #f39c10,
 	footer: hsla(220, 12%, 10%, 0.9),
 	success: #19bc9e,
 	alert: #fb3640,
@@ -11,6 +12,6 @@ $colors:(
 	bg: rgb(229, 229, 229),
 	bg-item: hsl(0, 0%, 100%),
 	text: #eeeeee,
-	warning: #f39c11,
+	warning: #f39c10,
 	logoA: #FF570C,
 );

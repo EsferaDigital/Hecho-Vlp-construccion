@@ -3,7 +3,8 @@ form{
   width: 95%;
   margin: auto;
 	display: flex;
-  border: 1px solid red;
+  // border: 1px solid red;
+  max-width: 600px;
   @include mq(sm){
     width: 100%;
     max-width: 500px;

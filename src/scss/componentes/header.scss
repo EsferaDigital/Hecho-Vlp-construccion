@@ -5,8 +5,12 @@
 		width: 40%;
     margin: 1rem auto;
     margin-bottom: .5rem;
+    @include mq(smH){
+      width: 24%;
+      // border: 2px solid red;
+    }
     @include mq(mdl){
-      width: 30%;
+      width: 20%;
     }
     @include mq(lgm){
       width: 15%;

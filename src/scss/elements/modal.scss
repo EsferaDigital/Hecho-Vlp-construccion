@@ -1,5 +1,5 @@
 .modal{
-	position: fixed;
+  position: fixed;
   display: grid;
   grid-template-areas:
         "banner"
@@ -14,7 +14,10 @@
 	z-index: z-index(capa10);
   transform: scale3d(0,0,0);
   background-color: white;
-	overflow-y: auto;
+  overflow-y: auto;
+  @include mq(lgm){
+    grid-template-rows: 18% min-content min-content min-content;
+  }
 	&.zoom-in{
 		animation: zoomIn .5s forwards;
 		@keyframes zoomIn{
@@ -38,13 +41,12 @@
     grid-area: banner;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: img('cabecera.jpg');
-    border: 1px solid red;
+    // border: 1px solid red;
     &::before{
       content: "";
       position: absolute;
@@ -54,47 +56,96 @@
       height: 15%;
       background-color: color(primary);
       opacity: .6;
+      @include mq(lgm){
+        height: 18%;
+      }
     }
     & h1{
       width: 100%;
       position: relative;
+      text-align: center;
+      top: 12%;
+      right: 12%;
       font-family: $primary-font;
       font-weight: 400;
-      font-size: 1rem;
+      font-size: 1.7rem;
       color: white;
+      // border: 1px solid orange;
+      @include mq(sm){
+        font-size: 1.9rem;
+      }
+      @include mq(mdl){
+        font-size: 2.5rem;
+      }
     }
     & p{
       width: 100%;
+      top: -7%;
+      font-size: .9rem;
+      text-align: center;
       position: relative;
+      color: color(text2);
+      // border: 1px solid green;
+      @include mq(sm){
+        font-size: 1rem;
+      }
+      @include mq(mdl){
+        font-size: 1.5rem;
+      }
     }
   }
   &-propuesta{
     grid-area: propuesta;
-    border: 2px solid green;
-    padding: 2rem;
+    // border: 2px solid green;
+    padding: 2rem 1rem;
+    @include mq(mdl){
+      width: 90%;
+      margin: auto;
+    }
     & h3{
       color: color(success);
       font-weight: 400;
       margin-bottom: 1rem;
+      @include mq(mdl){
+        font-size: 2rem;
+      }
     }
     & p{
       font-size: 1.3rem;
+      color: #16181ce6;
     }
   }
   &-vision{
     grid-area: vision;
-    border: 2px solid blue;
-    padding: 0 2rem;
+    // border: 2px solid blue;
+    // padding: 0 2rem;
   }
   &-unete{
     grid-area: unete;
-    padding: 2rem;
-    & h2{
+    padding: 2rem 1rem;
+    @include mq(mdl){
+      width: 90%;
+      margin: auto;
+    }
+    & h3{
       color: color(success);
       margin-bottom: 1rem;
+      font-weight: 400;
+      @include mq(mdl){
+        font-size: 2rem;
+      }
     }
     & p{
       font-size: 1.3rem;
+      color: #16181ce6;
+    }
+    & a{
+      color: color(text2);
+      font-size: inherit;
+      cursor: pointer;
+      &:hover{
+        color: color(success);
+      }
     }
   }
 }
@@ -103,14 +154,27 @@
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(44, 61, 80, 0.9);
+  @include mq(mdl){
+    width: 90%;
+    margin: auto;
+  }
   &-item{
     width: 100%;
     padding: 1rem;
     color: white;
+    @include mq(mdl){
+      width: 50%;
+    }
     & h4{
-      color: color(warning);
+      color: color(text2);
       font-weight: 400;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
+    }
+    & p{
+      @include mq(mdl){
+        font-size: 1.2rem;
+      }
     }
   }
 }
