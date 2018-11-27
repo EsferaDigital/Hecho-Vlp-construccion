@@ -5,7 +5,7 @@ const getRemainTime = deadline =>{
 		 remainMinutes = ('0' + Math.floor(remainTime / 60 % 60)).slice(-2),
 		 remainHours = ('0' + Math.floor(remainTime / 3600 % 24)).slice(-2),
 		 remainDays = Math.floor(remainTime / (3600 * 24));
-	
+
 	return{
 		remainTime,
 		remainSeconds,
@@ -41,4 +41,4 @@ const countdown = (deadline, elem) =>{
 	}, 1000)
 }
 
-countdown('November 15 2018 10:32:53 GMT-500', 'clock')
+countdown('January 1 2019 12:00:00 GMT-500', 'clock');
