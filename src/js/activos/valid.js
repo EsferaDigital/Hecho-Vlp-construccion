@@ -25,3 +25,15 @@ function validar(e) {
 }
 
 formulario.addEventListener('submit', validar)
+
+// Limpiar formulario al estar en foco
+
+const myInput = document.getElementById('myInput');
+
+myInput.addEventListener('focus', function(){
+  this.placeholder = '';
+});
+
+myInput.addEventListener('blur', function(){
+  this.placeholder = 'Ingresa tu correo';
+});
