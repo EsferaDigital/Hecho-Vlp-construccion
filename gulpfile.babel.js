@@ -31,7 +31,7 @@ gulp.task('pug2html', function buildHTML() {
 			pretty: true
 		}))
 		.pipe(gulpPugBeautify({ omit_empty: true }))
-		//.pipe(htmlmin({ collapseWhitespace: true })) //Activar para minificar
+		.pipe(htmlmin({ collapseWhitespace: true })) //Activar para minificar
 		.pipe(gulp.dest('./public/'));
 });
 
@@ -77,7 +77,7 @@ gulp.task('javascript', ['lint'], function () {
 			presets: ['@babel/env']
 		}))
 		.pipe(concat('all.min.js'))
-		.pipe(uglify())		
+		.pipe(uglify())
 		.pipe(gulp.dest('./public/js'));
 });
 
